@@ -28,6 +28,7 @@ void printLevelLineByLine(BinaryTreeNode<int>* root){
 }
 
 // method:- 2
+// time:- O(n) space:-0(n) (theta n) or O(n)
 void printLevelLineByLine(BinaryTreeNode<int>* root){
 	if(root == NULL)
 		return ;
