@@ -2,7 +2,7 @@
 #include "BinaryTreeNode.h"
 using namespace std;
 
-
+// method:- 1
 // time:- O(n+h) space:-0(w) or O(n) where w is the width of the tree
 void printLevelLineByLine(BinaryTreeNode<int>* root){
 	queue<BinaryTreeNode<int>*> q;
@@ -24,6 +24,27 @@ void printLevelLineByLine(BinaryTreeNode<int>* root){
 			q.push(front->left);
 		if(front->right!=NULL)
 			q.push(front->right);
+	}
+}
+
+// method:- 2
+void printLevelLineByLine(BinaryTreeNode<int>* root){
+	if(root == NULL)
+		return ;
+	queue<BinaryTreeNode<int>*> q;
+	q.push(root);
+	while(q.size()!=0){
+		int count = q.size();
+		for(int i=0; i<count; i++){
+			BinaryTreeNode<int>* front = q.front();
+			q.pop();
+			cout << front->data << " ";
+			if(front->left != NULL)
+				q.push(front->left);
+			if(front->right != NULL)
+				q.push(front->right);
+		}
+		cout << endl;
 	}
 }
 
