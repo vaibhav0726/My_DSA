@@ -2,6 +2,7 @@
 #include "BinaryTreeNode.h"
 using namespace std;
 
+// time:- 0(n) or O(n) space:- O(w) or 0(w) where w is the width of the tree
 int maxWidth(BinaryTreeNode<int>* root){
 	if(root == NULL)
 		return 0;
