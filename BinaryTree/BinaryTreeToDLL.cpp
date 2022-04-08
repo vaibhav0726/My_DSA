@@ -13,7 +13,7 @@ BinaryTreeNode<int>* BinaryTreeToDLL(BinaryTreeNode<int>* root){
     }
     else{
         root->left = prev;
-        prev->right = head;
+        prev->right = root;
     }
     prev = root;
     BinaryTreeToDLL(root -> right);
