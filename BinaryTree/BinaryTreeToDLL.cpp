@@ -3,6 +3,7 @@
 using namespace std;
 
 // Binary tree to doubly linkedlist
+// time:- O(n) and space:- O(h) where h is the height of the tree
 BinaryTreeNode<int>* prev = NULL;
 BinaryTreeNode<int>* BinaryTreeToDLL(BinaryTreeNode<int>* root){
     if(root == NULL)
