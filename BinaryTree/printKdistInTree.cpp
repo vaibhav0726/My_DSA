@@ -2,7 +2,7 @@
 #include "BinaryTreeNode.h"
 using namespace std;
 
-// time:-O(n) space:- O(h)
+// time:-O(n) space:- O(h) where h is the height of the tree
 void printKdist(BinaryTreeNode<int>* root,int k){
 	if(root==NULL)
 		return;
