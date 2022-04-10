@@ -11,6 +11,7 @@ int numNodes(BinaryTreeNode<int>* root){
 	return 1 + numNodes(root->left) + numNodes(root->right);
 }
 
+
 int main(){
 	BinaryTreeNode<int>* root = takeInput2();
 	printLevelLineByLine(root);
