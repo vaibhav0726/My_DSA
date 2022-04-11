@@ -44,7 +44,7 @@ int isBalanced(BinaryTreeNode<int>* root){
 
 int main(){
 	BinaryTreeNode<int>* root = takeInput2();
-	if(isBalanced(root) <= 1)
+	if(isBalanced(root) != -1)
 		cout << "Balanced";
 	else 
 		cout << "Not Balanced";
