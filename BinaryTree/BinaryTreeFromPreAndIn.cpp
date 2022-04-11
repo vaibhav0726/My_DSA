@@ -21,8 +21,8 @@ BinaryTreeNode<int>* cTree(int pre[], int in[], int is, int ie){
         }
     }
 
-    root->left  = cTree(pre, in, is, index-1);
-    root -> right = cTree(pre, in, index+1, ie);
+    root->left  = cTree(pre, in, is, inIndex-1);
+    root -> right = cTree(pre, in, inIndex+1, ie);
     return root;
 }
 
