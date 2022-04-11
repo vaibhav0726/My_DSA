@@ -13,10 +13,10 @@ BinaryTreeNode<int>* cTree(int pre[], int in[], int is, int ie){
     
     BinaryTreeNode<int>* root = new BinaryTreeNode(pre[preIndex++]);
 
-    int index;
+    int inIndex;
     for(int i=is; i<=ie; i++){
         if(in[i] == root->key){
-            index = i;
+            inIndex = i;
             break;
         }
     }
