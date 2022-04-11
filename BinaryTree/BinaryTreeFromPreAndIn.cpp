@@ -6,6 +6,7 @@ using namespace std;
 // (1) Inorder and postorder traversal or (2) Inorder and preorder traversal
 // can't make a binary tree using postorder and preorder traversal
 
+// time:- O(n^2) 
 int preIndex = 0;
 BinaryTreeNode<int>* cTree(int pre[], int in[], int is, int ie){
     if(is > ie)
